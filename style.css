@@ -21,7 +21,7 @@ label:before {
 
 input {
   position: absolute;
-  top: -9999px;  
+  left: -9999px;  
 }
 
 .inner {
