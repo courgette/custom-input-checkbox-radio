@@ -1,4 +1,14 @@
-label:before {
+
+/* Hide original input */
+input[type='checkbox'],
+input[type='radio'] {
+  position: absolute;
+  top: -9999px;
+}
+
+/* Define pseudo element as fake input */
+input[type='checkbox'] + label:before,
+input[type='radio'] + label:before {
   content: "";
   display: inline-block;
   width: 1em;
@@ -9,21 +19,18 @@ label:before {
   margin-right: 0.5em;
   border: 1px solid #999;
 }
-
-.radio label:before {
+input[type='radio'] + label:before {
   border-radius: 90px;
 }
 
-.checkbox input:checked + label:before,
-.radio input:checked + label:before {
+/* Focus state */
+input[type='checkbox']:focus + label:before,
+input[type='radio']:focus + label:before {
+  background: #ccc;
+}
+
+/* Checked state */
+input[type='checkbox']:checked + label:before,
+input[type='radio']:checked + label:before {
   background: #999;
-}
-
-input {
-  position: absolute;
-  top: -9999px;  
-}
-
-.inner {
-  margin-top: 3em;
 }
