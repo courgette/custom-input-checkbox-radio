@@ -15,7 +15,9 @@ label:before {
 }
 
 .checkbox input:checked + label:before,
-.radio input:checked + label:before {
+.radio input:checked + label:before,
+.checkbox input:focus + label:before,
+.radio input:focus + label:before {
   background: #999;
 }
 
