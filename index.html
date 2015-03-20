@@ -1,22 +1,24 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>custom input checkbox - radio</title>
-  <link rel="stylesheet" href="https://rawgithub.com/thomaslebeau/ratatouille/master/ratatouille.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+  .inner > div {margin: 2em auto;max-width: 20em;}
+  </style>
 </head>
 <body>
   <div class="inner">
-    <div class="checkbox input mbb">
+    <div class="checkboxes">
       <input id="check1" type="checkbox"/>
-      <label class="mbr" for="check1">label</label>
+      <label for="check1">label</label>
       <input id="check2" type="checkbox"/>
       <label for="check2">label 2</label>
     </div>
-    <div class="radio input">
+    <div class="radios">
       <input id="radio1" type="radio" name="val"/>
-      <label class="mbr" for="radio1">label</label>
+      <label  for="radio1">label</label>
       <input id="radio2" type="radio" name="val"/>
       <label for="radio2">label 2</label>
     </div>
