@@ -3,7 +3,7 @@
 input[type='checkbox'],
 input[type='radio'] {
   position: absolute;
-  top: -9999px;
+  left: -9999px;
 }
 
 /* Define pseudo element as fake input */
